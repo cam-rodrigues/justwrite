@@ -1,0 +1,6 @@
+[theme]
+base="dark"  # change to "light" if you prefer that as default
+primaryColor="#062eoo"              # accent green
+backgroundColor="#f5fff3"           # light green
+secondaryBackgroundColor="#112720"  # panel green
+textColor="#062eoo"                 # dark text
