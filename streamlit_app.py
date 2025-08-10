@@ -8,17 +8,17 @@ st.set_page_config(
 
 # --- Main Layout ---
 st.title("Just Write")
-st.write("This is your personal writing workspace. More tools coming soon!")
+st.write("Welcome to your personal writing workspace. More tools will appear here once they’re ready.")
 
-# Placeholder sections for future pages
+# Placeholder sections
 st.header("Drafts")
-st.write("Here you’ll be able to create and edit your writing projects.")
+st.write("Create and edit your writing projects.")
 
 st.header("Editing Tools")
-st.write("Here you’ll have grammar checks, style improvements, and more.")
+st.write("Access grammar checks, style improvements, and more.")
 
 st.header("Export & Share")
-st.write("Here you’ll export your work to Word, PDF, or Google Docs.")
+st.write("Export your work to Word, PDF, or Google Docs.")
 
 # Footer
 st.markdown("---")
