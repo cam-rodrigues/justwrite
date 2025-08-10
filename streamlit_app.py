@@ -3,23 +3,33 @@ import streamlit as st
 # --- Page Config ---
 st.set_page_config(
     page_title="Just Write",
-    layout="centered"
+    layout="wide"
 )
 
-# --- Main Layout ---
-st.title("Just Write")
-st.write("Welcome to your personal writing workspace. More tools will appear here once they’re ready.")
+# --- Sidebar ---
+st.sidebar.title("Navigation")
+page = st.sidebar.radio(
+    "Go to:",
+    ["Home", "Drafts", "Editing Tools", "Export & Share"]
+)
 
-# Placeholder sections
-st.header("Drafts")
-st.write("Create and edit your writing projects.")
+# --- Page Content ---
+if page == "Home":
+    st.title("Just Write")
+    st.write("Welcome to your personal writing workspace. More tools will appear here once they’re ready.")
 
-st.header("Editing Tools")
-st.write("Access grammar checks, style improvements, and more.")
+elif page == "Drafts":
+    st.title("Drafts")
+    st.write("Create and edit your writing projects.")
 
-st.header("Export & Share")
-st.write("Export your work to Word, PDF, or Google Docs.")
+elif page == "Editing Tools":
+    st.title("Editing Tools")
+    st.write("Access grammar checks, style improvements, and more.")
 
-# Footer
+elif page == "Export & Share":
+    st.title("Export & Share")
+    st.write("Export your work to Word, PDF, or Google Docs.")
+
+# --- Footer ---
 st.markdown("---")
 st.caption("Just Write — Your all-in-one writing assistant.")
